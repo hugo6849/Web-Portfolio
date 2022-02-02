@@ -1,0 +1,169 @@
+@font-face {
+  font-family: Gotham;
+  src: url("/fonts/GothamMedium.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/**
+Menu Options
+**/
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0);
+
+  z-index: 1000;
+}
+
+.menu {
+  font-family: Gotham;
+  color: #f8f8f8;
+  margin: 10px;
+  font-size: 200%;
+  animation: slide-up 0.5s ease-in 0s forwards;
+}
+
+.seconday-name {
+  font-size: 50%;
+}
+
+#main-menu-options {
+  padding-bottom: 2.5px;
+  font-size: 100px;
+  position: relative;
+  font-size: auto;
+  float: right;
+  line-height: 30px;
+  font-size: 50%;
+  margin-right: 2%;
+}
+
+.op-1 {
+  animation: slide-option 0.5s ease-in 0s forwards;
+}
+
+.op-2 {
+  animation: slide-option 0.8s ease-in 0s forwards;
+}
+
+.op-3 {
+  animation: slide-option 1s ease-in 0s forwards;
+}
+
+/**Main Menu Options Underline**/
+#main-menu-options a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: aliceblue;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+#main-menu-options a:hover::before {
+  transform: scaleX(1);
+}
+
+#main-menu-options li {
+  position: relative;
+}
+
+/**
+End of the Main Menu Options
+**/
+
+/**
+Start of Home
+**/
+#home {
+  background: #090909;
+}
+/**
+Start of About
+**/
+#about {
+  background: #161616;
+}
+
+#about h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f8f8f8;
+  font-size: 65px;
+  margin-top: 65px;
+  margin-left: 5%;
+}
+/**
+Start of Contact
+**/
+#contact {
+  background: #232323;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+body {
+  text-decoration: underline 0.15em rgba(0, 0, 0, 1);
+  background-color: black;
+  border-width: 2.5px;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin: 0 0 0 10px;
+}
+
+section {
+  width: 100%;
+  float: left;
+  height: 100vh;
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Animations*/
+@keyframes slide-up {
+  from {
+    opacity: 0.2;
+    line-height: 50px;
+  }
+  to {
+    opacity: 1;
+    line-height: 30px;
+    font-size: 200%;
+  }
+}
+
+@keyframes slide-option {
+  from {
+    opacity: 0.2;
+    transform: translatex(-200px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translatex(10px, 0);
+  }
+}
