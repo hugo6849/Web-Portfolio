@@ -1,7 +1,7 @@
 @font-face {
-  font-family: Gotham;
-  src: url("/fonts/GothamMedium.ttf") format("truetype");
-  font-weight: bold;
+  font-family: Circular;
+  src: url("/fonts/CircularStd-Medium.woff2") format("woff2");
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -21,7 +21,7 @@ Menu Options
 }
 
 .menu {
-  font-family: Gotham;
+  font-family: Circular;
   color: #f8f8f8;
   margin: 10px;
   font-size: 200%;
@@ -92,7 +92,7 @@ Start of Home
 Start of About
 **/
 #about {
-  background: #161616;
+  background: #232323;
 }
 
 #about h2 {
@@ -102,11 +102,44 @@ Start of About
   margin-top: 65px;
   margin-left: 5%;
 }
+
+#about h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f8f8f8;
+  font-size: 30px;
+  margin-top: 0px;
+  margin-left: 5%;
+}
+/**
+Start of Projects
+**/
+
+#projects {
+  background: #727272;
+}
+/**
+Start of Photography
+**/
+#photography {
+  background: #494949;
+}
+
 /**
 Start of Contact
 **/
 #contact {
-  background: #232323;
+  background: #9f9f9f;
+}
+
+#contact-images {
+  padding: 15% 0 0 5%;
+}
+
+#contact img {
+  fill: black;
+  width: 7%;
+  padding-bottom: 1%;
+  display: block;
 }
 
 a {
