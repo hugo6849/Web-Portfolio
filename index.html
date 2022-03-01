@@ -9,13 +9,32 @@
   <link rel="stylesheet" href="css/styles.css">
   <title>Hugo Ruiz</title>
   <!--Script Elements-->
-  <script src="scripts/jquery-3.6.0.js"></script>
+  <script src="/scripts/jquery-3.6.0.js"></script>
 </head>
 
 <!--Page Contents-->
 
 <body>
-  <div id="nav"></div>
+  <!--Navbar Elements-->
+  <header id="navbar">
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="#home">
+            Hugo Ruiz
+            <span class="seconday-name">frontend developer</span>
+          </a>
+        </li>
+        <span style="float:right" id="main-menu-options">
+          <li class="op-1"><a href="#home"> home</a></li>
+          <li class="op-2"><a href="#about"> about</a></li>
+          <li class="op-3"><a href="#projects">projects</a></li>
+          <li class="op-3"><a href="#photography"> photography</a></li>
+          <li class="op-3"><a href="#contact"> contact</a></li>
+        </span>
+      </ul>
+    </div>
+  </header>
   
   <section id="home"></section>
   
@@ -30,7 +49,14 @@
   
   <section id="projects"></section>
 
-  <section id="contact"></section>
+  <section id="contact">
+    <div id="contact-images">
+      <a href="https://github.com/hugo6849" target="_blank"><img src="images/github.svg"></a>
+      <a href="#" target="_blank"><img src="images/linkedin.svg"></a>
+      <a href="#" target="_blank"><img src="images/instagram.svg"></a>
+      <a href="#" target="_blank"><img src="images/twitter.svg"></a>
+    </div>
+  </section>
   
   <script src="scripts/app.js"></script>
 </body>
