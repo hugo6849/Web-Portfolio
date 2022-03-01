@@ -1,6 +1,6 @@
 @font-face {
   font-family: Circular;
-  src: url("./fonts/CircularStd-Medium.woff2") format("woff2");
+  src: url("/fonts/CircularStd-Medium.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@ Menu Options
   top: 0;
   left: 0;
   right: 0;
-  height: 10px;
+  height: px;
   background-color: rgba(0, 0, 0, 0);
 
   z-index: 1000;
