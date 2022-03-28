@@ -1,6 +1,6 @@
 @font-face {
   font-family: Circular;
-  src: url("./fonts/CircularStd-Medium.woff2") format("woff2");
+  src: url("/fonts/CircularStd-Medium.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,6 @@ Menu Options
   top: 0;
   left: 0;
   right: 0;
-  height: px;
   background-color: rgba(0, 0, 0, 0);
 
   z-index: 1000;
@@ -88,6 +87,7 @@ Start of Home
 #home {
   background: #090909;
 }
+
 /**
 Start of About
 **/
@@ -103,13 +103,15 @@ Start of About
   margin-left: 5%;
 }
 
-#about h3 {
+#about p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #f8f8f8;
   font-size: 30px;
   margin-top: 0px;
   margin-left: 5%;
+  animation: slide-about-me 1.4s;
 }
+
 /**
 Start of Projects
 **/
@@ -117,11 +119,41 @@ Start of Projects
 #projects {
   background: #727272;
 }
+
 /**
 Start of Photography
 **/
 #photography {
   background: #494949;
+}
+
+#photography-container {
+  margin: 65px 0 0 20px;
+  column-count: 4;
+  column-gap: 10px;
+}
+
+#photography-container img {
+  max-width: 100%;
+  display: block;
+}
+
+#photography-container figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+#photography-container figure > img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+
+#photography-container figure a {
+  color: black;
+  text-decoration: none;
 }
 
 /**
@@ -142,17 +174,22 @@ Start of Contact
   display: block;
 }
 
-a {
-  text-decoration: none;
-  color: aliceblue;
-}
+/**
+Default Tag Elements
+**/
 
 body {
   text-decoration: underline 0.15em rgba(0, 0, 0, 1);
+  font-family: Circular;
   background-color: black;
   border-width: 2.5px;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
 }
 
 ul {
@@ -191,6 +228,17 @@ html {
 }
 
 @keyframes slide-option {
+  from {
+    opacity: 0.2;
+    transform: translatex(-200px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translatex(10px, 0);
+  }
+}
+
+@keyframes slide-about-me {
   from {
     opacity: 0.2;
     transform: translatex(-200px, 0);
