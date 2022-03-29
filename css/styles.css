@@ -128,7 +128,7 @@ Start of Photography
 }
 
 #photography-container {
-  margin: 65px 0 0 20px;
+  margin: 65px 20px 0 20px;
   column-count: 4;
   column-gap: 10px;
 }
